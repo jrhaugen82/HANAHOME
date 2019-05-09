@@ -1,0 +1,16 @@
+ID: HANAHOME
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: SUPERHANA
+   type: hdb
+   path: SUPERHANA
+   requires:
+    - name: hdi_SUPERHANA
+
+resources:
+ - name: hdi_SUPERHANA
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
